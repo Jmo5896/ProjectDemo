@@ -1,26 +1,34 @@
-# ProjectDemo
+# terminal git commands for maintaining repo on github
 
-git clone
+## Personal project (challenge work aka a code base where YOU are the only contributor):
 
-git add .
-git commit -m "message here"
-git push
+- git clone
 
-git clone
+- git add .
+- git commit -m "COMMIT MESSAGE GOES HERE"
+- git push
 
-git checkout -b dev[DEV-NAME]
-git add .
-git commit -m "message here"
+## Group project (project work aka a code base where you are working with a team):
 
-git pull origin main
+- git clone
 
-if no merge conflict then
+- git checkout -b dev(DEV-NAME-GOES-HERE)
 
-    git push
+  - this will create a new branch which will be the branch you want to do ALL your work on.
 
-if merge conflict then
+- git add .
+- git commit -m "COMMIT MESSAGE GOES HERE"
 
-    resolve merge conflict
-    git add .
-    git commit -m "resolve merge"
-    git push
+- git pull origin main
+
+  - this step is where any possible merge conflicts will pop up.
+
+- if no merge conflict then:
+
+  - git push origin dev(DEV-NAME-GOES-HERE)
+
+- if merge conflict then
+  - resolve merge conflict (I reccomend taking care of this in vs code.)
+    - git add .
+    - git commit -m "resolve merge"
+    - git push origin dev(DEV-NAME-GOES-HERE)
